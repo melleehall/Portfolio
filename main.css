@@ -6,7 +6,11 @@
 body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 18px;
-  color: white;
+  color: black;
+}
+
+main {
+  margin: 0 20px 0 20px;
 }
 
 .nav {
@@ -23,28 +27,64 @@ header {
   padding-top: 20px;
 }
 
+/* hand waving animation */
+span.wave {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate(  0.0deg) }
+   10% { transform: rotate(-10.0deg) }
+   20% { transform: rotate( 12.0deg) }
+   30% { transform: rotate(-10.0deg) }
+   40% { transform: rotate(  9.0deg) }
+   50% { transform: rotate(  0.0deg) }
+  100% { transform: rotate(  0.0deg) }
+}
+
 .row {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
 
+.headshot {
+  height: 100%;
+}
+
+.email {
+ text-decoration: none; 
+ color: rgb(255, 255, 255);
+ background-color: gray;
+}
+
+.email:hover {
+  background-color: cornflowerblue;
+}
+
 header,
 section {
   height: 200px;
-  background-color: black;
+  border: 1px solid black;
 }
 
 footer,
 section:nth-child(even) {
-  background-color: dimgray;
+  border: 1px solid dimgray;
 }
 
 .side-by-side {
-  background-color: silver;
-  width: 30%;
+  display: flex;
+  width: 24%;
+  background-color: gray;
+  font-size: 30px;
 }
 
 footer {
   height: 35px;
 }
+
