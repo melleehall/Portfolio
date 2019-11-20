@@ -1,12 +1,14 @@
 * {
     box-sizing: border-box;
-    text-align: center;
 }
 
 body {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
   font-size: 18px;
   color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 main {
@@ -21,10 +23,29 @@ main {
   z-index: 1;
   background-color: gray;
   height: 30px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.hamburger {
+  height: 100%;
 }
 
 header {
   padding-top: 20px;
+  font-family: 'Yeseva One', cursive;
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bio-p {
+  text-align: left;
+  width: 90%;
 }
 
 /* hand waving animation */
@@ -46,20 +67,30 @@ span.wave {
   100% { transform: rotate(  0.0deg) }
 }
 
-.row {
+h1 {
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+p {
+  font-family: 'Merriweather', serif;
+  font-size: 14px;
+}
+
+.headshot-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .headshot {
-  height: 100%;
+  height: 80%;
+  margin-top: 20px;
 }
 
 .email {
  text-decoration: none; 
  color: rgb(255, 255, 255);
- background-color: gray;
+ width: 120px;
 }
 
 .email:hover {
@@ -68,20 +99,12 @@ span.wave {
 
 header,
 section {
-  height: 200px;
-  border: 1px solid black;
+  height: 180px;
 }
 
-footer,
-section:nth-child(even) {
-  border: 1px solid dimgray;
-}
-
-.side-by-side {
-  display: flex;
-  width: 24%;
-  background-color: gray;
-  font-size: 30px;
+.email-container {
+  background-color: cornflowerblue;
+  border-radius: 50%;
 }
 
 footer {
