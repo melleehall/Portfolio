@@ -3,16 +3,18 @@
 }
 
 body {
-  color: black;
+  color: #383838;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0px;
 }
 
 main {
-  margin: 0 20px 0 20px;
+  margin: 0 30px 0 30px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 section {
@@ -44,8 +46,8 @@ section {
 }
 
 .hero {
-  background: url(Portfolio-Photos/MountainHero.jpg);
-  background-size: 100% 650px;;
+  background: url(MountainHero.jpg);
+  background-size: 100% 650px;
   background-position: center;
   padding-top: 20px;
 }
@@ -65,20 +67,20 @@ section {
   margin-top: 20px;
 }
 
-.headline {
+.headshot-container,
+.headline,
+.headshot {
   height: 200px;
+}
+
+.headline {
   width: 50%;
   margin-right: auto;
   margin-top: 0px;
   margin-bottom: 0px;
-  border: 2px black solid;
+  border: 2px #383838 solid;
   display: flex;
   align-items: center;
-}
-
-.headshot-container,
-.headshot {
-  height: 200px;
 }
 
 .headline-text {
@@ -90,7 +92,7 @@ section {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
-  background-color: black;
+  background-color: #383838;
 }
 
 .bio-container {
@@ -127,7 +129,8 @@ h1 {
   font-family: 'Merriweather Sans', sans-serif;
 }
 
-p {
+p,
+li {
   font-family: 'Merriweather', serif;
   font-size: 14px;
 }
@@ -138,29 +141,104 @@ p {
   width: 30%;
 }
 
-.email {
+.quiz-app-container {
+  display: flex;
+  justify-content: center;
+}
+
+.quiz-app {
+  width: 280px;
+  margin-top: 10px;
+  /* border: 2px #383838 solid; */
+  /* box-shadow: 10px 10px 5px grey; */
+  box-shadow: 0 8px 18px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.project-title {
+    font-style: italic;
+}
+
+.tech-logo {
+  height: 20px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 10px;
+}
+
+.contact {
  text-decoration: none; 
- color: rgb(255, 255, 255);
  width: 120px;
+ color: #383838;
 }
 
-.email:hover {
-  background-color: cornflowerblue;
+.contact-icon {
+  height: 20px;
 }
 
-.email-container {
-  background-color: cornflowerblue;
-  border-radius: 50%;
+.about-me-cont {
+  display: flex;
+  flex-direction: row;
+}
+
+.recipe-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  color: white;
+  background: #383838;
+}
+
+.recipe-title,
+li {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.recipe-instructions {
+  padding: 0px;
 }
 
 footer {
-  height: 35px;
+  position: relative;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  color:  #383838;
+  font-style: italic; 
 }
 
+/* iPhone 5 */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 380px)
+  {
+    .headshot-container,
+    .headline,
+    .headshot {
+      height: 170px;
+    }
+}
+
+/* iPhone 6, 7, & 8 */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  {
+    .hero {
+      height: 180px;
+    }
+}
 
 /* iPad styles */
-@media only screen 
+/* @media only screen 
 /* and (min-device-width : 768px) 
 and (max-device-width : 1024px)  { 
   /* STYLES GO HERE */
-} */
+/* }  */ */
