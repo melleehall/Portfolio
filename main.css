@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  margin: 0 20px 0 20px;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: gray;
+  height: 30px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.hamburger {
+  height: 100%;
+}
+
+header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 250px;
+  padding-top: 20px;
+  font-family: 'Yeseva One', cursive;
+  color: white;
+  background: url(Portfolio-Photos/BreckHero.jpg);
+  background-size: 100% 250px;;
+}
+
+.hero {
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.hero:hover {
+  opacity: 1.0;
+  filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bio-p {
+  text-align: left;
+  width: 90%;
+}
+
+/* hand waving animation */
+span.wave {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate(  0.0deg) }
+   10% { transform: rotate(-10.0deg) }
+   20% { transform: rotate( 12.0deg) }
+   30% { transform: rotate(-10.0deg) }
+   40% { transform: rotate(  9.0deg) }
+   50% { transform: rotate(  0.0deg) }
+  100% { transform: rotate(  0.0deg) }
+}
+
+h1 {
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+p {
+  font-family: 'Merriweather', serif;
+  font-size: 14px;
+}
+
+.headshot-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.headshot {
+  height: 80%;
+  margin-top: 20px;
+}
+
+.email {
+ text-decoration: none; 
+ color: rgb(255, 255, 255);
+ width: 120px;
+}
+
+.email:hover {
+  background-color: cornflowerblue;
+}
+section {
+  height: 180px;
+}
+
+.email-container {
+  background-color: cornflowerblue;
+  border-radius: 50%;
+}
+
+footer {
+  height: 35px;
+}
+
