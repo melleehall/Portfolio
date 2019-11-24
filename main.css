@@ -3,8 +3,6 @@
 }
 
 body {
-  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
-  font-size: 18px;
   color: black;
   display: flex;
   flex-direction: column;
@@ -13,6 +11,12 @@ body {
 
 main {
   margin: 0 20px 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  margin-top: 20px;
 }
 
 .nav {
@@ -21,7 +25,7 @@ main {
   left: 0;
   right: 0;
   z-index: 1;
-  background-color: gray;
+  background-color: white;
   height: 30px;
   display: flex;
   flex-direction: row-reverse;
@@ -29,23 +33,75 @@ main {
 
 .hamburger {
   height: 100%;
+  margin-right: 20px;
 }
 
-header {
-  padding-top: 20px;
+.hero,
+.headshot-container {
+  width: 100%;
+  height: 260px;
   font-family: 'Yeseva One', cursive;
 }
 
-.bio {
+.hero {
+  background: url(Portfolio-Photos/DSC03898.jpg);
+  background-size: 100% 650px;;
+  background-position: center;
+  padding-top: 20px;
+}
+
+.name {
+  color: white;
+  font-size: 18px;
+  width: 105px;
+  padding: 3px;
+  margin: 15px 0px 0px 15px;
+  border: solid white 2px;
+}
+
+.intro-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.headline {
+  height: 200px;
+  width: 50%;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border: 2px black solid;
+  display: flex;
+  align-items: center;
+}
+
+.headshot-container,
+.headshot {
+  height: 200px;
+}
+
+.headline-text {
+  padding: 0px 11px;
+}
+
+.line {
+  height: 3px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: black;
+}
+
+.bio-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.bio-p {
+.bio-text {
   text-align: left;
-  width: 90%;
 }
 
 /* hand waving animation */
@@ -78,13 +134,8 @@ p {
 
 .headshot-container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.headshot {
-  height: 80%;
-  margin-top: 20px;
+  flex-direction: row-reverse;
+  width: 30%;
 }
 
 .email {
@@ -97,11 +148,6 @@ p {
   background-color: cornflowerblue;
 }
 
-header,
-section {
-  height: 180px;
-}
-
 .email-container {
   background-color: cornflowerblue;
   border-radius: 50%;
@@ -111,3 +157,10 @@ footer {
   height: 35px;
 }
 
+
+/* iPad styles */
+@media only screen 
+/* and (min-device-width : 768px) 
+and (max-device-width : 1024px)  { 
+  /* STYLES GO HERE */
+} */
