@@ -1,0 +1,244 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  color: #383838;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px;
+}
+
+main {
+  margin: 0 30px 0 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  margin-top: 20px;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: white;
+  height: 30px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.hamburger {
+  height: 100%;
+  margin-right: 20px;
+}
+
+.hero,
+.headshot-container {
+  width: 100%;
+  height: 260px;
+  font-family: 'Yeseva One', cursive;
+}
+
+.hero {
+  background: url(MountainHero.jpg);
+  background-size: 100% 650px;
+  background-position: center;
+  padding-top: 20px;
+}
+
+.name {
+  color: white;
+  font-size: 18px;
+  width: 105px;
+  padding: 3px;
+  margin: 15px 0px 0px 15px;
+  border: solid white 2px;
+}
+
+.intro-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.headshot-container,
+.headline,
+.headshot {
+  height: 200px;
+}
+
+.headline {
+  width: 50%;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border: 2px #383838 solid;
+  display: flex;
+  align-items: center;
+}
+
+.headline-text {
+  padding: 0px 11px;
+}
+
+.line {
+  height: 3px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #383838;
+}
+
+.bio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bio-text {
+  text-align: left;
+}
+
+/* hand waving animation */
+span.wave {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate(  0.0deg) }
+   10% { transform: rotate(-10.0deg) }
+   20% { transform: rotate( 12.0deg) }
+   30% { transform: rotate(-10.0deg) }
+   40% { transform: rotate(  9.0deg) }
+   50% { transform: rotate(  0.0deg) }
+  100% { transform: rotate(  0.0deg) }
+}
+
+h1 {
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+p,
+li {
+  font-family: 'Merriweather', serif;
+  font-size: 14px;
+}
+
+.headshot-container {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 30%;
+}
+
+.quiz-app-container {
+  display: flex;
+  justify-content: center;
+}
+
+.quiz-app {
+  width: 280px;
+  margin-top: 10px;
+  /* border: 2px #383838 solid; */
+  /* box-shadow: 10px 10px 5px grey; */
+  box-shadow: 0 8px 18px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.project-title {
+    font-style: italic;
+}
+
+.tech-logo {
+  height: 20px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 10px;
+}
+
+.contact {
+ text-decoration: none; 
+ width: 120px;
+ color: #383838;
+}
+
+.contact-icon {
+  height: 20px;
+}
+
+.about-me-cont {
+  display: flex;
+  flex-direction: row;
+}
+
+.recipe-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  color: white;
+  background: #383838;
+}
+
+.recipe-title,
+li {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.recipe-instructions {
+  padding: 0px;
+}
+
+footer {
+  position: relative;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  color:  #383838;
+  font-style: italic; 
+}
+
+/* iPhone 5 */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 380px)
+  {
+    .headshot-container,
+    .headline,
+    .headshot {
+      height: 170px;
+    }
+}
+
+/* iPhone 6, 7, & 8 */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  {
+    .hero {
+      height: 180px;
+    }
+}
+
+/* iPad styles */
+/* @media only screen 
+/* and (min-device-width : 768px) 
+and (max-device-width : 1024px)  { 
+  /* STYLES GO HERE */
+/* }  */ */
