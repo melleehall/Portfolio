@@ -235,6 +235,9 @@ and (max-device-width: 480px)
 /* Tablets and Narrow Browser Screen*/
 @media only screen 
 and (min-device-width : 501px) { 
+  .hamburger {
+    display: none;
+  }
   section {
     margin-top: 40px;
   }
@@ -262,8 +265,35 @@ and (min-device-width : 501px) {
     justify-content: space-evenly;
     margin: 25px 5px;
   }
+  .bio-text,
+  .quiz-app-text {
+    font-size: 18px;
+  }
   .bio-text {
     width: 60%;
-    font-size: 20px;
   }
 }  
+
+@media only screen 
+and (min-device-width : 1024px) { 
+  .hero {
+    height: 300px;
+  }
+  .quiz-app-text {
+    font-size: 20px;
+    width: 60%;
+  }
+  .quiz-app-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .bio-text,
+  .quiz-app-text {
+    font-size: 26px;
+  }
+  .quiz-app-text {
+    width: 40%;
+    padding-top: 60px;
+  }
+}
