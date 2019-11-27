@@ -68,12 +68,6 @@ justify-content: space-evenly;
 margin-top: 20px;
 }
 
-.headshot-container,
-.headline,
-.headshot {
-height: 200px;
-}
-
 .headline {
 width: 50%;
 margin-right: auto;
@@ -130,7 +124,7 @@ h1 {
 font-family: 'Merriweather Sans', sans-serif;
 }
 
-p,
+.headline-text,
 li {
 font-family: 'Merriweather', serif;
 font-size: 16px;
@@ -197,7 +191,23 @@ color:  #383838;
 font-style: italic; 
 }
 
-/* iPhone 5 */
+.headshot-container,
+.headshot-container-v2,
+.headline,
+.headshot,
+.headshot-v2 {
+  height: 200px;
+}
+
+.headshot-container-v2 {
+  display: none;
+}
+
+/* Media Queries */
+
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Galaxy S5, iPhone 5, & iPhone X */
 @media only screen 
 and (min-device-width: 320px) 
 and (max-device-width: 380px)
@@ -207,9 +217,12 @@ and (max-device-width: 380px)
   .headshot {
     height: 170px;
   }
+  .headline-text {
+    font-size: 14px;
+  }
 }
 
-/* iPhone 6, 7, & 8 */
+/* Mobile Phones - Galaxy S5, , Pixel 2/Pixel 2 XL, iPhone 5, 6/6+, 7/7+, & 8/8+ */
 @media only screen 
 and (min-device-width: 320px) 
 and (max-device-width: 480px)
@@ -219,9 +232,38 @@ and (max-device-width: 480px)
   }
 }
 
-/* iPad styles */
-/* @media only screen 
-/* and (min-device-width : 768px) 
-and (max-device-width : 1024px)  { 
-/* STYLES GO HERE */
-/* }  */ */
+/* Tablets and Narrow Browser Screen*/
+@media only screen 
+and (min-device-width : 501px) { 
+  section {
+    margin-top: 40px;
+  }
+  .line {
+    width: 30%;
+  }
+  .headshot-container {
+    display: none;
+  }
+  .headline {
+    width: 100%;
+    height: 90px;
+  }
+  .headline-text {
+    font-size: 23px;
+    line-height: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .headshot-container-v2 {
+    display: block;
+  }
+  .bio-container {
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 25px 5px;
+  }
+  .bio-text {
+    width: 60%;
+    font-size: 20px;
+  }
+}  
