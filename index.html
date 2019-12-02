@@ -2,16 +2,15 @@
 <html lang="en">
 <head>
     <title>melanie lee hallowell (Portfolio Wireframe)</title>
+    <meta name="description"
+		content="Melanie Lee Hallowell Professional Portfolio - try fun web apps created with HTML/CSS/JavaScript/jQuery">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
     <link rel="stylesheet" type="text/css" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans|Yeseva+One&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav role="navigation" class="nav">
-        <img src="HamburgerMenu.png" alt="hamburger icon" class="hamburger">
-    </nav>
-    <main role="main">
+    <main aria-live="polite">
         <header class="hero">
             <h1 class="name"> melanie lee hallowell </h1>
         </header>
@@ -27,6 +26,16 @@
                     <div class="headshot-container-v2"> <img class="headshot-v2" src="Headshot.jpg" alt="Headshot of Portfolio Owner"> </div>
                 <p class="bio-text"> You can often find me harnessing the power of CSS, Javascript, and jQuery to create clean and responsive websites with interactive elements. I find beauty in the intersection of creativity and programming where elegant and engaging websites are born. I also believe in the importance of lifelong education and feel most satisfied after trying something new or fixing a pesky bug.</p>   
             </div>
+            <div class="recipe"> 
+                    <h3> My "Happiness Recipe" includes equal parts:</h3>
+                    <ul class="ingredients">
+                            <li class="ingredient">Cool jQuery Event Method</li>
+                            <li class="ingredient">Thai Drunken Noodles</li>
+                            <li class="ingredient">Bernese Mountain Dog</li>
+                            <li class="ingredient">Cheap Airline Ticket</li>
+                            <li class="ingredient">Spotify</li>
+                    </ul>
+                </div>
             <div class="line"> </div>
         </section>
 
@@ -58,6 +67,7 @@
 
         <section class="contact-info">
             <h2> Let's Connect </h2>
+            <div class="contact-links">
             <p>
                 <ul>
                     <li><a class="contact" href="mailto:melleehall@gmail.com" target="_blank"> 
@@ -97,6 +107,7 @@
                     linkedin.com/in/mhallowell/ </a></li>
                 </ul>
             </p>
+            </div>
         </section>
     </main>
     <footer> &copy; 2019 Melanie Lee Hallowell </footer>

@@ -21,23 +21,6 @@ section {
 margin-top: 30px;
 }
 
-.nav {
-position: fixed;
-top: 0;
-left: 0;
-right: 0;
-z-index: 1;
-background-color: white;
-height: 30px;
-display: flex;
-flex-direction: row-reverse;
-}
-
-.hamburger {
-height: 100%;
-margin-right: 20px;
-}
-
 .hero,
 .headshot-container {
 width: 100%;
@@ -58,7 +41,7 @@ font-size: 18px;
 line-height: 24px;
 width: 105px;
 padding: 3px;
-margin: 15px 0px 0px 15px;
+margin: 5px 0px 0px 15px;
 border: solid white 2px;
 }
 
@@ -123,7 +106,8 @@ display: inline-block;
 }
 
 h1,
-h2 {
+h2,
+h3 {
 font-family: 'Merriweather Sans', sans-serif;
 }
 
@@ -167,6 +151,15 @@ list-style: none;
 padding-left: 10px;
 padding-bottom: 20px;
 }
+
+ul.ingredients li::before {
+  content: "\2022";  
+  color: cornflowerblue;
+  font-weight: bold;
+  display: inline-block;
+  width: 20px;
+  margin-left: 1em;
+} 
 
 .contact,
 .proj-links {
@@ -240,9 +233,6 @@ and (max-device-width: 480px)
 /* Tablets and Narrow Browser Screen*/
 @media only screen 
 and (min-device-width : 501px) { 
-  .hamburger {
-    display: none;
-  }
   section {
     margin-top: 70px;
   }
@@ -287,6 +277,14 @@ and (min-device-width : 501px) {
     margin-left: auto;
     margin-right: auto;
   }
+  .recipe {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  }
 }  
 
 @media only screen 
@@ -309,6 +307,20 @@ and (min-device-width : 1024px) {
   }
   h2 {
     font-size: 30px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  ul.ingredients li::before {
+    display: none;
+  } 
+  .ingredient {
+    background-color: cornflowerblue;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 7px;
   }
   .quiz-app-text {
     font-size: 20px;
