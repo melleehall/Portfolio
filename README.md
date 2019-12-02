@@ -1,0 +1,1 @@
+Hi, I'm Melanie - a Front End Web Developer based in the foothills of Boulder, Colorado.
