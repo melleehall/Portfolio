@@ -144,6 +144,12 @@ box-shadow: 0 8px 18px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
 
 .tech-logo {
 height: 20px;
+margin: 0px 2px;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: row;
 }
 
 ul {
@@ -267,6 +273,11 @@ and (min-device-width : 501px) {
   .quiz-app-text {
     font-size: 18px;
   }
+
+.quiz-app-text {
+  display: flex;
+  flex-direction: column  ;
+}
   .bio-text {
     width: 80%;
   }
