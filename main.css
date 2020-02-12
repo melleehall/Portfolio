@@ -23,7 +23,7 @@ margin-top: 30px;
 
 .hero,
 .headshot-container {
-width: 100%;
+width: 100vw;
 height: 200px;
 font-family: 'Yeseva One', cursive;
 }
@@ -132,8 +132,9 @@ align-items: center;
 justify-content: center;
 }
 
-.quiz-app {
-width: 280px;
+.quiz-app,
+.economy-pump-img {
+width: 220px;
 margin-top: 10px;
 box-shadow: 0 8px 18px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -142,7 +143,8 @@ box-shadow: 0 8px 18px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
   font-style: italic;
 }
 
-.tech-logo {
+.tech-logo,
+i {
 height: 20px;
 margin: 0px 2px;
 }
@@ -269,15 +271,9 @@ and (min-device-width : 501px) {
     justify-content: space-evenly;
     margin: 25px 5px;
   }
-  .bio-text,
-  .quiz-app-text {
+  .bio-text {
     font-size: 18px;
   }
-
-.quiz-app-text {
-  display: flex;
-  flex-direction: column  ;
-}
   .bio-text {
     width: 80%;
   }
@@ -296,6 +292,9 @@ and (min-device-width : 501px) {
   flex-direction: column;
   align-items: left;
   }
+  .project-bottom {
+    margin-bottom: 60px;
+  }
 }  
 
 @media only screen 
@@ -313,7 +312,7 @@ and (min-device-width : 1024px) {
     border: solid white 2px;
   }
   .headline-text {
-    font-size: 32px;
+    font-size: 26px;
     line-height: 40px;
   }
   h2 {
@@ -333,23 +332,21 @@ and (min-device-width : 1024px) {
     align-items: center;
     padding: 7px;
   }
-  .quiz-app-text {
-    font-size: 20px;
-    width: 60%;
-  }
   .quiz-app-content {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
   }
   .bio-text,
-  .quiz-app-text,
   .proj-links,
   li {
-    font-size: 22px;
+    font-size: 16px;
     line-height: 32px;
   }
-  .quiz-app-text {
+  .app-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
     width: 40%;
     padding-top: 60px;
   }
@@ -365,10 +362,10 @@ and (min-device-width : 1024px) {
     justify-content: space-evenly;
   }
   li {
-    font-size: 20px;
+    font-size: 16px;
     margin-right: 15px;
   }
-  .footer {
-    font-size: 30px;
+  .contact {
+    font-size: 16px;
   }
 }
